@@ -1,9 +1,11 @@
 import React from 'react'
 import { users } from '../data/Users'
+import UserComponent from '../components/usercomponent'
 const HomeScreen = () => {
-    return <div>
-          <h3> {users[0].name} </h3> 
-            </div>
+    return <div> 
+      <UserComponent />
+    </div>
+       
 }
 
 export default HomeScreen
