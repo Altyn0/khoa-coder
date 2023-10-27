@@ -1,12 +1,14 @@
 import React from 'react'
+import TextComponent from './TextComponent';
 
-const UserComponent = () => {
+const UserComponent = (props) => {
+  const { name, email ,company } = props ; 
   return (
-    <>
-        <h5>User name</h5>
-        <p>Age</p>
-        <p>address</p>
-    </>
+    <div>
+        <h5>tên:  {name} </h5>
+        <TextComponent text={`Email:${email}`}/>
+        <TextComponent text={`company:${company.name}`}/>
+    </div>
   )
 }
 
