@@ -6,7 +6,7 @@ const UserComponent = (props) => {
   return (
     <div>
         <h5>tên:  {name} </h5>
-        <TextComponent text={`Email:${email}`}/>
+        <TextComponent text={`Email:${email}`} size={14} color='#212121'/>
         <TextComponent text={`company:${company.name}`}/>
     </div>
   )
