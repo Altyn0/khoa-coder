@@ -5,26 +5,38 @@ import HeaderComponent from '../components/HeaderComponent';
 import TextComponent from '../components/TextComponent';
 import CardComponent from '../components/CardComponent';
 const HomeScreen = () => {
+    const sayHi =() =>{
+
+      alert('Hello World!!!!');
+    }
+
+
     return( <div> 
-      <HeaderComponent/>
+      
+      <a onClick={sayHi}> Khoa đẹp trai  </a>
 
-     <CardComponent color='coral'>
-      <p>Profile Screen</p>
-        </CardComponent>
+      
+      </div>
+      
+    //   {/* /* <HeaderComponent/>
 
-     <CardComponent  color='coral'>
-      <p>HomeScreen</p>
+    //  <CardComponent color='coral'>
+    //   <p>Profile Screen</p>
+    //     </CardComponent>
+
+    //  <CardComponent  color='coral'>
+    //   <p>HomeScreen</p>
         
 
-      {users.map((user) =>
-        (<UserComponent 
-          key ={user.id} 
-          name={user.name} 
-          email={user.email} 
-          company={user.company} />
-      ))}
-      </CardComponent>
-    </div>
+    //   {users.map((user) =>
+    //     (<UserComponent 
+    //       key ={user.id} 
+    //       name={user.name} 
+    //       email={user.email} 
+    //       company={user.company} />
+    //   ))}
+    //   </CardComponent> */} 
+    
      ) ;  
 };
 
