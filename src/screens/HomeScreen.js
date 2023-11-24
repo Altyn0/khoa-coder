@@ -1,12 +1,16 @@
 import React,{ useState } from 'react'
 const HomeScreen = () => {
-   const [name, setName] = useState(0);
-    return ( 
-    <div>
-      <p>{name}</p>
-    <button onClick={() => setName(Math.floor(Math.random()*100))}> change name </button>
-    </div>
+ 
 
+    return ( 
+      <div>
+        <div style={{
+          padding:20,
+        }}>
+        <button> Like </button>
+        <button> DisLike </button>
+        </div>
+      </div>
      );  
 };
 
